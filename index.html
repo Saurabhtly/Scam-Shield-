@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ScamShield - AI-Powered Scam Call Detection</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav>
+    <div class="logo">
+      <i class="fas fa-shield-alt"></i>
+      <span>ScamShield</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#how-it-works">How It Works</a></li>
+      <li><a href="#demo">Demo</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Protect Yourself from Scam Calls with AI</h1>
+      <p>ScamShield detects suspicious activity in phone calls, keeping you safe from fraudsters.</p>
+      <button id="uploadBtn">Upload Call Audio</button>
+      <input type="file" id="audioFile" accept=".wav,.mp3" style="display: none;">
+      <p id="result"></p>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="features">
+    <h2>Key Features</h2>
+    <div class="feature-cards">
+      <div class="card">
+        <i class="fas fa-microphone-alt"></i>
+        <h3>Real-Time Analysis</h3>
+        <p>Analyzes calls in real-time to detect suspicious activity.</p>
+      </div>
+      <div class="card">
+        <i class="fas fa-exclamation-triangle"></i>
+        <h3>Red Flag Detection</h3>
+        <p>Identifies requests for OTPs, CVVs, or remote app installations.</p>
+      </div>
+      <div class="card">
+        <i class="fas fa-comment-dots"></i>
+        <h3>Explainable AI</h3>
+        <p>Provides clear explanations for flagged calls.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works Section -->
+  <section id="how-it-works" class="how-it-works">
+    <h2>How It Works</h2>
+    <div class="steps">
+      <div class="step">
+        <i class="fas fa-upload"></i>
+        <h3>Upload Call Audio</h3>
+        <p>Upload a recorded call in WAV or MP3 format.</p>
+      </div>
+      <div class="step">
+        <i class="fas fa-brain"></i>
+        <h3>AI Analysis</h3>
+        <p>Our AI processes the audio to detect suspicious patterns.</p>
+      </div>
+      <div class="step">
+        <i class="fas fa-flag"></i>
+        <h3>Get Results</h3>
+        <p>Receive a clear classification and explanation.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Demo Section -->
+  <section id="demo" class="demo">
+    <h2>Try It Out</h2>
+    <div class="demo-content">
+      <p>Upload a call audio file to see ScamShield in action.</p>
+      <button id="demoUploadBtn">Upload Audio</button>
+      <input type="file" id="demoAudioFile" accept=".wav,.mp3" style="display: none;">
+      <p id="demoResult"></p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <form id="contactForm">
+      <input type="text" id="name" placeholder="Your Name" required>
+      <input type="email" id="email" placeholder="Your Email" required>
+      <textarea id="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2023 ScamShield. All rights reserved.</p>
+    <div class="social-icons">
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-linkedin"></i></a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
